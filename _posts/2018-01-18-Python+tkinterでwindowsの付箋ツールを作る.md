@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pythonで簡単にwindows付箋みたいなツールを作る
+title: Python+tkinterで簡単にwindows付箋みたいなツールを作る
 tags: Python
 ---
 
