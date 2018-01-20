@@ -1,6 +1,6 @@
 # Easy!Deverloper
 
-# tree  
+## tree  
 .  
 ├── README.md  
 ├── _config.yml  
@@ -11,22 +11,23 @@
 │   ├── layout.html  
 │   └── post.html  
 ├── _posts  
-│   ├── 2018-01-16-Python.md  
-│   └── 20180118  
-│       ├── 201801180000.jpg  
-│       ├── 201801180001.gif  
-│       └── 20180118_fusen.zip  
+│   └── 2018-01-18-Python.md  
 ├── css  
 │   └── foldingtext.css  
+├── file  
+│   ├── 201801180000.jpg  
+│   ├── 201801180001.gif  
+│   └── 20180118_fusen.zip  
 ├── icon  
 │   ├── app.icns  
 │   ├── favicon.png  
-│   ├── faviconalt.png  
-│   ├── logo.png  
-│   ├── logo16.png  
 │   ├── logo32.png  
 │   ├── logo48.png  
 │   ├── logo60.png  
 │   ├── program.ico  
 │   └── zip.png  
 └── index.md  
+  
+## Live Demo
+https://developer-2018.github.io/
+
