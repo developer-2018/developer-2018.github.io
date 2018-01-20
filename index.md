@@ -5,6 +5,7 @@ title: Easy!developer
 navtitle: Home
 navpos: 0
 ---
+<h1>TOP PAGE</h1>
 <ul>
 {% for post in site.posts %}
     <a href="{{ post.url }}">
