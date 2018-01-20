@@ -13,7 +13,7 @@ navpos: 0
     </h1>
     {{ post.content | strip_html | truncatewords: 10 }}
     </a>
-    <br>
+    <br><br>
 
 {% endfor %}
 </ul>

@@ -2,16 +2,18 @@
   <header>
     <table class=side_table>
       <tr>
-        <td>
-          <div align=center>
+        <td align=center>
             <a href="/index.html" class="logo">{{ site.title }}</a>
-            <br/>
-          </div>
         </td>
       </tr>
       <tr>
         <td>
-          <div align=left>
+            <a href="/profile.html">profile</a>
+            <br/>
+        </td>
+      </tr>
+      <tr>
+        <td align=left>
             {% for tag in site.tags %}
               {{ tag[0] }}
               {% for post in tag[1] %}
@@ -19,7 +21,6 @@
                 <br/>
               {% endfor %} 
             {% endfor %}
-          </div>
         </td>
       </tr>
     </table>
