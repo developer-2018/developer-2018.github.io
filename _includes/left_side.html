@@ -1,0 +1,27 @@
+<DIV id="Left_area">
+  <header>
+    <table class=side_table>
+      <tr>
+        <td>
+          <div align=center>
+            <a href="/index.html" class="logo">{{ site.title }}</a>
+            <br/>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div align=left>
+            {% for tag in site.tags %}
+              {{ tag[0] }}
+              {% for post in tag[1] %}
+                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                <br/>
+              {% endfor %} 
+            {% endfor %}
+          </div>
+        </td>
+      </tr>
+    </table>
+  </header>
+  </DIV>

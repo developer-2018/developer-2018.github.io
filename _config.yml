@@ -1,0 +1,25 @@
+
+###################
+# Jekyll Settings #
+###################
+markdown: rdiscount
+permalink: /:categories/:year-:month-:day/:title
+pagecontent: 50
+
+#################
+# Site Settings #
+#################
+
+title : Easy!Developer
+tagline: Site Tagline
+author :
+  name : wata.smile
+  email : hello@testmail.com
+  github : username
+  twitter : username
+  feedburner : feedname
+link:
+  twitter : 
+  facebook : 
+  github : https://github.com/developer-2018/developer-2018.github.io
+
