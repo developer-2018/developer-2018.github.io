@@ -9,8 +9,7 @@ BODY {
 	color: rgb(20%,20%,20%);
 	background: rgb(97%,97%,97%);
 	margin: 0px 0px 0px 0px;
-	padding: 0px 0px 0px 310px ;
-	/* 左側の横サイズを 300 ピクセルとします */
+	padding: 0px 0px 0px 300px ; /* 左側の横サイズを 300 ピクセルとします */
 	}  
   * html body{
 	min-height: 100%;
@@ -26,16 +25,16 @@ BODY {
 	margin:0;
 	padding:0;
 	top:0;
-	width:300px;
+	width:290px;/* bodyで設定した幅-10 */
 	height:100%;
 	list-style-type: none;
 }
 /* 疑似フレーム right部 */
 	* html div#Main_area{
 	height: 100%;
-	margin:0 0 0 320px;
+	margin:0 0 0 310px;/* bodyで設定した幅+10 */
 	padding:0;
-	max-width: 500px; /*※幅を指定する必要あり */
+	max-width: 500px; /* 幅を指定する必要あり */
 	word-break : break-all;
 	white-space: nowrap;
 	}
@@ -45,7 +44,13 @@ html {
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
 }
-
+/* HEADER */
+header {
+	text-align: center;
+}
+header a, header a:link {
+	text-decoration: none;
+}
 
 
 /*###################
@@ -64,15 +69,23 @@ hr {
 	text-align:center;
 	color: rgb(20%,20%,20%);
 }
+/* head link */
+header a, header a:link,header a:visited {
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+/* head link on cursor */
+header a:hover {
+	color: rgb(77, 77, 77);
+}
 /* link */
-a, a:link {
-	color: black;
+a,a:link,a:visited  {
+	color: rgb(0, 0, 0);
 	text-decoration: underline;
 }
 /* link on cursor */
 a:hover {
-	color: black;
-	text-decoration: none;
+	color: rgb(37, 37, 37);
 }
 /* lists(ul,ol,li) */
 ul, ol {
@@ -82,17 +95,27 @@ ul {
 	list-style-type: circle;
 }
 li:before {
-	content:none;
+	content:"・ ";
 }
 /* source code */
 code {
-	margin:0; 
+	padding:0.3em 0.3em 0.5em 0em;
+	margin:0px; 
 	font-family: Courier, monospace;
 	font-size: 1.4rem;
 	background: rgb(211, 211, 211);
 }
+/* BLOCKQUOTES(引用) */
+blockquote{
+	margin:10px;
+	font-family: Courier, monospace;
+	font-size: 1.4rem;
+	background: rgb(211, 211, 211);
+}
+
+
 /*#########################
-#    レイアウト：button     #
+#    部品：button          #
 #########################*/
 /* レイアウト */
 .share_btn2{
@@ -123,7 +146,7 @@ code {
 .share_btn2.shgp {background: #fd6969;}
 
 /*#########################
-#    レイアウト：logo       #
+#    部品：logo            #
 #########################*/
 /* レイアウト */
 .logo {
@@ -144,7 +167,6 @@ code {
 	color: #517a8d;
 }
 
-
 /*#########################
 #         未分類           #
 #########################*/
@@ -153,33 +175,6 @@ code {
 	/*border: 1px solid rgb(201, 201, 201) ;*/
 	width:100%;
 }
-
-/* BLOCKQUOTES */
-blockquote:before { 
-	content: "\201C"; 
-	float: left;
-	margin-left:-1rem;
-	}
-	blockquote {
-		width:52rem;
-		margin:2rem auto;
-		margin-right:10rem;
-		font-style:italic;
-		clear:both;
-	}
-	blockquote a {
-		text-decoration:none;
-		color: rgb(20%,20%,20%);;
-	}
-	blockquote .author:before {
-		content: " – "; 	
-	}
-	
-	
-	blockquote .quote:after { 
-	content: "\201D";
-	}
-	
 	
 	/* ALL HORIZONTAL ALIGNMENT */
 	
@@ -188,21 +183,6 @@ blockquote:before {
 	.center50 { width: 50%; margin: auto; }
 	.center60 { width: 60%; margin: auto; }
 	.center90 { width: 90%; margin: auto; }
-	
-	/* HEADER */
-	
-	header {
-		text-align: center;
-	}
-	header .site-title {
-		text-indent: 0rem;
-		font-size: 1.6rem;
-		font-weight: bold;
-	}
-	header a, header a:link {
-		color: black;
-		text-decoration: none;
-	}
 	
 	/* FOOTER */
 	
@@ -255,19 +235,8 @@ blockquote:before {
 	
 	/* INDEX BODY */
 	
-	#index a, a:link, a:hover{
-		text-decoration: none;
-		color: rgb(20%,20%,20%);
-	}
-	
-	index a, index a:link{
-		text-decoration: none;
-	}
-	index a:hover{
-		text-decoration: underline;
-	}
 	index .box-title{
-		color: black;
+		color: rgb(10, 216, 103);
 		font-style: italic;
 	}
 	index .post{
@@ -283,7 +252,7 @@ blockquote:before {
 		 font-weight: normal;
 	}
 	.post-title{
-		color: black;
+		color: rgb(160, 9, 9);
 		font-weight: bold;
 	}
 	index .post-meta{
@@ -318,13 +287,13 @@ blockquote:before {
 	#page {
 	}
 	#page a, #page a:link {
-		color: black;
+		color: rgb(219, 235, 0);
 		text-decoration: underline;
 	}
-	#page-title{color:black; font-weight: bold;}
+	#page-title{color:rgb(223, 103, 5); font-weight: bold;}
 	#page-count{}
 	#page-meta{}
-	#page-line{color: black;}
+	#page-line{color: rgb(40, 223, 255);}
 	#page-entry{}
 	
 	/* MEDIA */
@@ -351,3 +320,4 @@ blockquote:before {
 			padding-top:8rem;
 		}
 	}
+

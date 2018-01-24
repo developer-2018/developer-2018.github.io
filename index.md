@@ -12,8 +12,8 @@ navpos: 0
     <h3>
     {{ post.date | date_to_long_string }} : {{ post.title }}
     </h3>
-    {{ post.content | strip_html | truncatewords: 10 }}
     </a>
+    {{ post.content | strip_html | truncatewords: 10 }}
     <br><br>
 
 {% endfor %}
