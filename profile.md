@@ -24,8 +24,5 @@ navpos: 0
 WEB FrontEnd : html+css(jekyll)  
 WEB BackEnd :java(js),Oracle,PL/SQL  
 ETC :Python,tkinter  
-業務 : 貿易基幹業務システム  
+業務 : 貿易業務システム  
 <br>
-### Link  
-- [Markdown記法まとめ][1]
-[1]:http://cartman0.hatenablog.com/entry/2015/03/31/164836#%E7%94%BB%E5%83%8F-img

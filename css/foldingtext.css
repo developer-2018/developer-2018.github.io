@@ -51,14 +51,29 @@ header {
 header a, header a:link {
 	text-decoration: none;
 }
-
+/* Main area table */
+div#Main_area table {
+	border-collapse: collapse;
+}
+div#Main_area table tr th,
+div#Main_area table tr td {
+    padding: 0 10px;
+	border: 1px solid  rgb(116, 116, 116);
+    vertical-align: middle;/*中央(上下)位置*/
+}
+div#Main_area table tr th {
+    text-align: center;
+}
+div#Main_area table tr:nth-child(odd) td { /*偶数行のみ*/
+	background: #e6e6e6;
+}
 
 /*###################
 #       text        #
 ###################*/
 /* h1~h6 */
 h1, h2, h3, h4, h5, h6 {
-	margin:1rem 0;
+	margin:0.8rem 0;
 	color:black;
 }
 /* hr */
@@ -72,11 +87,6 @@ hr {
 /* head link */
 header a, header a:link,header a:visited {
 	text-decoration: none;
-	color: rgb(0, 0, 0);
-}
-/* head link on cursor */
-header a:hover {
-	color: rgb(77, 77, 77);
 }
 /* link */
 a,a:link,a:visited  {
@@ -85,7 +95,7 @@ a,a:link,a:visited  {
 }
 /* link on cursor */
 a:hover {
-	color: rgb(37, 37, 37);
+	color: rgb(107, 107, 107);
 }
 /* lists(ul,ol,li) */
 ul, ol {
@@ -97,22 +107,29 @@ ul {
 li:before {
 	content:"・ ";
 }
+/* Main area li code */
+div#Left_area li:before {
+	content:"▶ ";
+	color:#9fc9dd;
+}
+div#Left_area li {
+	margin: 0px 0px 0px 0px;
+}
 /* source code */
 code {
 	padding:0.3em 0.3em 0.5em 0em;
 	margin:0px; 
 	font-family: Courier, monospace;
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	background: rgb(211, 211, 211);
 }
 /* BLOCKQUOTES(引用) */
 blockquote{
 	margin:10px;
 	font-family: Courier, monospace;
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	background: rgb(211, 211, 211);
 }
-
 
 /*#########################
 #    部品：button          #
