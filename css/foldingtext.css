@@ -9,11 +9,9 @@ BODY {
 	color: rgb(20%,20%,20%);
 	background: rgb(97%,97%,97%);
 	margin: 0px 0px 0px 0px;
-	padding: 0px 0px 0px 300px ; /* 左側の横サイズを 300 ピクセルとします */
-	}  
-  * html body{
+	padding: 0px 0px 0px 26% ; /* 左側の横サイズを 300 ピクセルとします */
 	min-height: 100%;
-	} 
+}  
 /* 疑似フレーム left部 */
 	div#Left_area {
 	overflow-y: auto;
@@ -25,18 +23,15 @@ BODY {
 	margin:0;
 	padding:0;
 	top:0;
-	width:290px;/* bodyで設定した幅-10 */
+	max-width:290px;/* bodyで設定した幅-10 */
+	width:25%;/* 横幅の30% */
 	height:100%;
 	list-style-type: none;
 }
 /* 疑似フレーム right部 */
 	* html div#Main_area{
 	height: 100%;
-	margin:0 0 0 310px;/* bodyで設定した幅+10 */
 	padding:0;
-	max-width: 500px; /* 幅を指定する必要あり */
-	word-break : break-all;
-	white-space: nowrap;
 	}
 /* Setting the baseline font */
 html {
